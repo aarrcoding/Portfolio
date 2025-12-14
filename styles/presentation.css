@@ -1,0 +1,103 @@
+/* Presentation designs grid */
+
+.pd-hero{
+  padding-top: 60px;
+}
+
+.pd-title{
+  color: rgba(237, 237, 237, 1);
+  font-family: Mak, serif;
+  font-size: 88.193px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 93.96%;
+  margin: 0 0 50px;
+}
+.pres-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 415px);
+  gap: 20px;
+  justify-content: center; /* чтобы сетка стояла ровно по центру */
+}
+
+.pres-card{
+ width: 415px;
+  height: 233px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* адаптив (чтобы не ломалось на маленьких экранах) */
+@media (max-width: 1400px){
+  .pres-grid{ grid-template-columns: repeat(2, 415px); }
+}
+@media (max-width: 900px){
+  .pres-grid{ grid-template-columns: 1fr; }
+  .pres-card{ width: 100%; height: auto; }
+}
+
+/* ===== 2 COLUMNS / "SEE ALL" BLOCK ===== */
+
+.two-col-showcase{
+  padding: 80px 0 100px; /* можешь подвинуть */
+}
+
+.col-title{
+  color: #EDEDED;
+  text-align: center;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 31.039px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0 0 22px;
+}
+
+/* grid inside each column */
+.thumb-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center; /* чтобы карточки стояли ровно по центру */
+}
+
+/* photo size as in before/after block */
+.thumb{
+  width: 638px;
+  height: 359px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* button like in mockup (outline pill) */
+.see-all-btn{
+  margin: 28px auto 0;
+  display: block;
+
+  width: 180px;
+  height: 46px;
+
+  background: transparent;
+  color: #EDEDED;
+
+  border: 1px solid rgba(237, 237, 237, 0.8);
+  border-radius: 999px;
+
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.see-all-btn:hover{
+  filter: brightness(1.1);
+}
+
+/* responsive: чтобы на маленьких экранах не вылезало */
+@media (max-width: 1200px){
+  .thumb{
+    width: 100%;
+    height: auto;
+  }
+}

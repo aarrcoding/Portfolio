@@ -1,0 +1,194 @@
+/* =========================
+   HOME: HERO
+========================= */
+
+.hero{
+  background-color: #0F0F0F;
+  background-image: url("../assets/hero-works.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+
+  min-height: 725px;
+  overflow: hidden;
+  padding-bottom: 48px;
+}
+
+/* =========================
+   HOME: HERO CONTENT
+========================= */
+
+.display-title{
+  font-family: 'Mak', serif;
+  font-size: 158.25px;
+  font-weight: 700;
+  line-height: 0.9396;
+  color: #EDEDED;
+  margin: 0;
+}
+
+.hero__subtitle{
+  font-family: 'Mulish', sans-serif;
+  font-size: 64.14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 7.72px;
+  margin-bottom: 51.6px;
+}
+
+.hero__content{
+  padding-top: 97.67px;
+  padding-bottom: 138px;
+}
+
+/* =========================
+   HOME: ABOUT SECTION
+========================= */
+
+.about-section{
+  background: #12B0FF;
+  padding: 87px 0 64px;
+}
+
+.about-card{
+  background: #E6E6E6;
+  border-radius: 28px;
+  width: 1145px;
+  margin: 0 auto;
+  padding: 67px 71px;
+}
+
+.about-grid{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-text{
+  width: 740px;
+  color: #0F0F0F;
+}
+
+.avatar{
+  width: 279.745px;
+  height: 279.745px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* если где-то используется */
+.lead-ko{
+  font-size: 16px;
+  line-height: 1.7;
+  color: #0F0F0F;
+  margin-bottom: 24px;
+}
+
+/* =========================
+   HOME: SECTION TITLES / LISTS
+========================= */
+
+.section-title{
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 56px;
+  font-weight: 600;
+  color: #12B0FF;
+  margin: 20px 0 12px;
+}
+
+.skill-list{
+  padding-left: 18px;
+  margin: 0;
+}
+
+.skill-list li{
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #0F0F0F;
+}
+
+/* =========================
+   HOME: EXPERIENCE
+========================= */
+
+.exp-item{
+  border-left: 3px solid #61E786;
+  padding-left: 16px;
+  margin-top: 24px;
+}
+
+.exp-title{
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 4px;
+  color: #0F0F0F;
+}
+
+.exp-meta{
+  font-size: 13px;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.exp-desc{
+  margin-top: 10px;
+  line-height: 1.7;
+  color: #0F0F0F;
+}
+
+/* =========================
+   HOME: (если где-то осталось старое)
+========================= */
+
+.avatar-wrap{
+  position: absolute;
+  top: 22px;
+  right: 26px;
+  width: 150px;
+  height: 150px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 16px 28px rgba(0,0,0,.2);
+}
+
+.avatar-wrap img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* =========================
+   HOME: RESPONSIVE
+========================= */
+
+@media (max-width: 768px){
+  .about-card{
+    width: auto;
+    padding: 28px 20px;
+  }
+
+  .about-grid{
+    flex-direction: column;
+  }
+
+  .about-text{
+    width: 100%;
+  }
+
+  .section-title{
+    font-size: 44px;
+  }
+
+  .display-title{
+    font-size: 80px;
+  }
+
+  .hero__subtitle{
+    font-size: 34px;
+  }
+}

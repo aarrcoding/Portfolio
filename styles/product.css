@@ -1,0 +1,119 @@
+/* =========================
+   PRODUCT PAGE
+========================= */
+
+body{
+  background: #0F0F0F;
+}
+
+/* если где-то случайно есть .hero в разметке — убираем картинку */
+.hero{
+  background: #0F0F0F;
+  background-image: none;
+}
+
+/* =========================
+   PRODUCT DESIGN HERO
+========================= */
+
+.pd-hero{
+  padding: 120px 0 80px;
+  padding-top: 60px;
+}
+
+.pd-title{
+  color: rgba(237, 237, 237, 1);
+  font-family: Mak, serif;
+  font-size: 88.193px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 93.96%;
+  margin: 0 0 50px;
+}
+
+/* =========================
+   SLIDER GRID 3x6 with 20px gaps
+========================= */
+
+.pd-grid{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.pd-card{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Carousel spacing + indicators */
+.pd-carousel{
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.pd-indicators{
+  bottom: -10px;
+}
+
+.pd-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+/* BEFORE/AFTER SECTION */
+.pd-section{
+  padding: 72px 0 120px; /* подгони если надо */
+}
+
+.ba-grid{
+  width: 1290px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.ba-img{
+  width: 636px;
+  height: 458px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+/* чтобы не ломалось на узких экранах */
+@media (max-width: 1200px){
+  .ba-grid{
+    grid-template-columns: 1fr;
+  }
+  .ba-img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px){
+  .pd-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px){
+  .pd-title{
+    font-size: 54px;
+  }
+
+  .pd-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
