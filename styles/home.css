@@ -1,6 +1,4 @@
-/* =========================
-   HOME: HERO
-========================= */
+/* HOME: HERO */
 
 .hero{
   background-color: #0F0F0F;
@@ -14,9 +12,7 @@
   padding-bottom: 48px;
 }
 
-/* =========================
-   HOME: HERO CONTENT
-========================= */
+/* HOME: HERO CONTENT */
 
 .display-title{
   font-family: 'Mak', serif;
@@ -42,9 +38,7 @@
   padding-bottom: 138px;
 }
 
-/* =========================
-   HOME: ABOUT SECTION
-========================= */
+/* HOME: ABOUT SECTION */
 
 .about-section{
   background: #12B0FF;
@@ -79,7 +73,7 @@
   display: block;
 }
 
-/* если где-то используется */
+
 .lead-ko{
   font-size: 16px;
   line-height: 1.7;
@@ -87,9 +81,7 @@
   margin-bottom: 24px;
 }
 
-/* =========================
-   HOME: SECTION TITLES / LISTS
-========================= */
+/* HOME: SECTION TITLES / LISTS */
 
 .section-title{
   font-family: Georgia, "Times New Roman", serif;
@@ -110,9 +102,7 @@
   color: #0F0F0F;
 }
 
-/* =========================
-   HOME: EXPERIENCE
-========================= */
+/* HOME: EXPERIENCE */
 
 .exp-item{
   border-left: 3px solid #61E786;
@@ -139,9 +129,7 @@
   color: #0F0F0F;
 }
 
-/* =========================
-   HOME: (если где-то осталось старое)
-========================= */
+/* HOME */
 
 .avatar-wrap{
   position: absolute;
@@ -162,11 +150,41 @@
   object-fit: cover;
 }
 
-/* =========================
-   HOME: RESPONSIVE
-========================= */
+/* HOME: RESPONSIVE */
 
 @media (max-width: 768px){
+
+  /* HERO */
+  .hero{
+    height: auto;
+    min-height: 70vh;
+    padding: 16px 30px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+  }
+
+  .hero > *{
+    position: relative;
+    z-index: 2;
+  }
+
+  .display-title{
+    font-size: 40px;
+    line-height: 1.05;
+  }
+
+  .hero__subtitle{
+    font-size: 18px;
+  }
+
   .about-card{
     width: auto;
     padding: 28px 20px;
@@ -185,7 +203,8 @@
   }
 
   .display-title{
-    font-size: 80px;
+     font-size: 60px;
+  line-height: 1.05;
   }
 
   .hero__subtitle{
